@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.container{
+    width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/**********HEADER**********/
+
+header{
+    height: 60px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    height: 20px;
+}
+
+.menu-header{
+    width: 70%;
+    padding-top: 20px;
+}
+
+.titulo-header{
+    width: 30%;
+    margin-top: 10px;
+}
+
+.titulo-header b{
+    color: blue;
+}
+
+.menu-header ul li a{
+    color: white;
+}
+
+.titulo-header h1{
+    font-size: 35px;
+    color: white;
+}
+
+.menu-header ul li{
+    display: inline;
+    font-size: 20px;
+    padding: 15px;
+}
+
+
+/**********CONTEÚDO**********/
+
+.conteudo{
+    padding-top: 70px;
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.header-texto{
+    text-align: right;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.header-texto h3{
+    color: rgb(59, 89, 255);
+    font-size: 25px;
+}
+
+.conteudo-1{
+    width: 70%;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+}
+
+.conteudo-1 .conteudo-texto img{
+    width: 250px;
+    float: right;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.conteudo-2{
+    width: 30%;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+}
+
+.conteudo-texto{
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+
+/**********FORMULÁRIO**********/
+
+.formulario{
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.formulario-campos{
+    background-color: rgb(240, 240, 240);
+    margin: 10px;
+    text-align: center;
+}
+
+.formulario h2{
+    padding: 30px;
+    color: rgba(59, 89, 255);
+    font-size: 28px;
+}
+
+form span, input, select{
+    margin-bottom: 20px;
+}
+
+form{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+input, select{
+    font-size: 15px;
+    padding: 4px;
+}
+
+.btn-enviar{
+    font-size: 20px;
+    background-color: rgba(59, 89, 255);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 7px 15px;
+    margin: 10px 0 30px 0;
+    cursor: pointer;
+}
+
+
+/**********TABELA**********/
+
+.tabela{
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.tabela-campos{
+    background-color: rgb(240, 240, 240);
+    margin: 10px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table td, table th{
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.tabela h2{
+    padding: 30px;
+    color: rgba(59, 89, 255);
+    font-size: 28px;
+}
+
+table{
+    font-size: 20px;
+}
+
+.tabela-interface{
+    margin: 0 5px;
+}
+
+
+/**********FOOTER**********/
+
+footer{
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer h2{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+    color: rgb(200, 200, 200);
+}
+
+
+@media screen and (max-width: 1024px){
+    header{
+        height: 110px;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .menu-header{
+        width: 100%;
+        text-align: center;
+    }
+
+    .titulo-header{
+        width: 100%;
+        text-align: center;
+    }
+
+    .conteudo, .formulario, .tabela{
+        padding-top: 115px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .menu-header ul li{
+        display: block;
+        padding: 3px;
+    }
+
+    header{
+        height: 170px;
+        padding: 0;
+    }
+
+    .conteudo, .formulario, .tabela{
+        padding-top: 175px;
+    }
+
+    .conteudo{
+        display: block;
+        width: 100%;
+    }
+
+    .conteudo-1, .conteudo-2{
+        width: 90%;
+    }
+
+    table{
+        font-size: 15px;
+    }
+
+    table td, table th{
+        padding: 2px 5px;
+    }
+}

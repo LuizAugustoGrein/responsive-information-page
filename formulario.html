@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avaliação WEB I - Formulário</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="menu">
+                    <div class="menu-header">
+                        <ul>
+                            <li><a href="index.html">HOME - Questão 1</a></li>
+                            <li><a href="formulario.html" style="color: rgb(118, 118, 255);">FORMULÁRIO - Questão 2</a></li>
+                            <li><a href="tabela.html">TABELA - Questão 3</a></li>
+                        </ul>
+                    </div><!--menu-header-->
+                    <div class="titulo-header">
+                        <h1>Avaliação <b>WEB I</b></h1>
+                    </div><!--titulo-header-->
+                </div><!--menu-->
+            </div><!--container-->
+        </header>
+        <section>
+            <div class="container">
+                <div class="formulario">
+                    <div class="formulario-campos">
+                        <h2>Digite seus dados para se cadastrar</h2>
+                        <form>
+                            <span>Nome:</span>
+                            <input type="text" name="nome" required>
+                            <br>
+                            <span>E-mail:</span>
+                            <input placeholder="teste@teste.com.br" type="email" name="e-mail" required>
+                            <br>
+                            <span>Fone:</span>
+                            <input placeholder="(XX)XXXXX-XXXX" type="text" name="fone" required>
+                            <br>
+                            <span>Nascimento:</span>
+                            <input type="date" name="nascimento" required style="cursor:text;">
+                            <br>
+                            <span>Gênero:</span>
+                            <input type="radio" name="genero" id="masculino" value="masculino" required style="cursor: pointer;">
+                            <label for="masculino" style="cursor: pointer;">Masculino</label>
+                            <input type="radio" name="genero" id="feminino" value="feminino" required style="cursor: pointer;">
+                            <label for="feminino" style="cursor: pointer;">Feminino</label>
+                            <br>
+                            <span>Escolaridade:</span>
+                            <select style="cursor: pointer;">
+                                <option value="escolaridade1">Ensino Fundamental Incompleto</option>
+                                <option value="escolaridade2">Ensino Fundamental Completo</option>
+                                <option value="escolaridade3">Ensino Médio Incompleto</option>
+                                <option value="escolaridade1">Ensino Médio Completo</option>
+                                <option value="escolaridade1">Ensino Superior Incompleto</option>
+                                <option value="escolaridade1">Ensino Superior Completo</option>
+                            </select>
+                            <br>
+                            <input class="btn-enviar" type="submit" value="Enviar" name="Enviar">
+                        </form>
+                    </div><!--formulario-campos-->
+                </div><!--formulario-->
+            </div><!--container-->
+        </section>
+        <footer>
+            <div class="container">
+                <div class="rodape">
+                    <h2>Desenvolvido por Luiz Augusto Grein</h2>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
